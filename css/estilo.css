@@ -1,4 +1,9 @@
+/*Importa fonte do google fonts*/
+
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+/*Reset*/
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +11,45 @@
 
 }
 
-.red{
-    color: red;
-    font-family:"rock salt";
+/*Header*/
+
+.main-header {
+    background-image: url(background-image.png); /*Adicionar imagem no fundo*/
+    background-position:50% 39%; /*Alinha os elementos nos eixos x e y*/
+    display:flex; /*colocar elementos centralizados*/
+    flex-direction:column; /*alinha os elementos um em baixo do outro*/
+    align-items:center; /*centralizar os elementos*/
+}
+
+.main-nav {
+    width: 100%; /*Ocupar toda a area disponivel*/
+    max-width: 600px; /*trava a largura maxima que definir para o projeto*/
+    padding: 0 16px; /*primeiro é cima e baixo, segundo é esquerda e direita*/
+}
+.header-list-container{
+    display: flex; /*colocar os elementos na mesma linha*/
+    justify-content: space-between; /*adiciona espaçamento entre os items*/
+    align-items: center; /*garantir que fiquem alinhados na mesma linha*/
+    padding: 16px 0; /*primeiro é cima e baixo, segundo é esquerda e direita */
+}
+
+.nav-item {
+    list-style-type: none; /*remove bolinhas padrão dos elementos li*/
+    text-transform: uppercase; /*deixar todas as letras em maiusculo*/
+    color: blue;
+
+}
+
+hr {
+    width: 100%; /*Ocupar toda a area disponivel*/
+}
+
+.nav-item a {
+    text-decoration: none; /*remove o underline do ancora*/
+    color: inherit; /*herda a cor do elemento pai (neste caso é o nav-item)*/
+}
+
+.nav-item:hover {
+    color: rgb(11, 54, 104);/*Quando passar o mouse troca a cor / rgb passa a cor e no final*/
+    transition: 0s;
 }
