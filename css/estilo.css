@@ -1,6 +1,7 @@
 /*Importa fonte do google fonts*/
 
-@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&display=swap');
+
 
 /*Reset*/
 
@@ -23,8 +24,8 @@
 
 .main-nav {
     width: 100%; /*Ocupar toda a area disponivel*/
-    max-width: 600px; /*trava a largura maxima que definir para o projeto*/
-    padding: 0 16px; /*primeiro é cima e baixo, segundo é esquerda e direita*/
+    
+
 }
 .header-list-container{
     display: flex; /*colocar os elementos na mesma linha*/
@@ -51,5 +52,32 @@ hr {
 
 .nav-item:hover {
     color: rgb(11, 54, 104);/*Quando passar o mouse troca a cor / rgb passa a cor e no final*/
-    transition: 0s;
+    transition: 0s; /*adiciona um delay que tem ao trocar a cor*/
 }
+.main-about {
+    padding: 40px 0px 64px;
+
+
+}
+.container {
+    max-width: 600px; /*trava a largura maxima que definimos para o projeto*/
+    padding: 0 16px; /*primeiro cima/baixo, segunda esquerda /direita*/
+    margin: 0 auto; /*não aplica cima/baixo, o auto distribui o maximo possivel para esquerda e direita*/
+}
+.about-title {
+    font-family: "Rock Sal";  /*pega a fonte importada, caso ele não encontre a utilizada a sans-serif*/
+    font-size: 32px; /*tamanho da fonte*/
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+.about image{
+    float: left; /*Alinha a imagem esquerda e texto a direita*/
+    margin: 0 20px 10px 0; /*0 topo, 20 direita, 10 baixo 0 esquerda*/
+    /*diminuir o tamanho das imagens*/
+    width: 200px; /*largura*/
+    height: auto; /*evita distorção da imagem*/
+}
+
+
+
