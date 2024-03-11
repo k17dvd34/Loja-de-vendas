@@ -12,6 +12,21 @@
 
 }
 
+li {
+    list-style: none; /*Retira*/
+}
+
+/*Criação de Variaveis no root do css*/
+
+:root {
+    --blue: #00008B;
+    --gray: #555555;
+    --skyblue: #00BFFF;
+    --silver: #c0c0c0;
+    --red: #ff0000;
+    --darkgray: #959595;
+}
+
 /*Header*/
 
 .main-header {
@@ -37,7 +52,7 @@
 .nav-item {
     list-style-type: none; /*remove bolinhas padrão dos elementos li*/
     text-transform: uppercase; /*deixar todas as letras em maiusculo*/
-    color: blue;
+    color: var(--blue);
 
 }
 
@@ -65,7 +80,7 @@ hr {
     margin: 0 auto; /*não aplica cima/baixo, o auto distribui o maximo possivel para esquerda e direita*/
 }
 .about-title {
-    font-family: "Rock Sal";  /*pega a fonte importada, caso ele não encontre a utilizada a sans-serif*/
+    font-family: "Raleway", sans-serif;  /*pega a fonte importada, caso ele não encontre a utilizada a sans-serif*/
     font-size: 32px; /*tamanho da fonte*/
     text-align: center;
     text-transform: uppercase;
@@ -77,6 +92,48 @@ hr {
     /*diminuir o tamanho das imagens*/
     width: 200px; /*largura*/
     height: auto; /*evita distorção da imagem*/
+}
+.about-description {
+    color: var(--gray); /*utiliza variavel de cor criado no root*/
+    text-align: justify; /*justifica o texto*/
+}
+
+/*footer*/
+
+.main-footer {
+    background-color: var(--skyblue); /*aplica cor no fundo do rodape*/
+    padding: 15px 0; /*Aplica espaçamento cima/baixo e nada esquerda/direita*/
+    
+}
+
+.main-footer-container {
+    display:flex; /* Deixar tudo na mesma linha*/
+    align-items: center; /* Alinha todos os elementos*/
+    justify-content: space-between; /*Colar nome de um lado e lista de icones do outro*/
+}
+
+.title-smaller {
+    font-family: "Raleway", sans-serif; /*Pegar a fonte importada*/
+    color: var(--blue); /*Aplica cor com a variavel criada no root Css*/
+    font-size: 26px; /*Aumenta a fonte*/
+
+}
+
+.list-container {
+    display: flex; /*deixar os elementos na mesma linha*/ 
+    align-items: center; /*alinha todos os elementos*/
+    justify-content: space-between; /*Colocar o nome de um lado e os icones do outro*/
+}
+
+.footer-item {
+    width: 50px;
+    height: 50px;
+    padding: 15px 0; /*Aplica espaçamento 15px cima/baixo e 0px esquerda/direita*/
+
+}
+
+.footer-item {
+    margin-left: 16px; /*Aplica a mesma class seguindo em diante, ate chegar*/
 }
 
 
