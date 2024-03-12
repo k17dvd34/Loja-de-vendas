@@ -12,6 +12,10 @@
 
 }
 
+body {
+    font: 400 22px "Roboto", sans-serif;
+}
+
 li {
     list-style: none; /*Retira*/
 }
@@ -24,7 +28,9 @@ li {
     --skyblue: #00BFFF;
     --silver: #c0c0c0;
     --red: #ff0000;
+    --white: #ffffff;
     --darkgray: #959595;
+    
 }
 
 /*Header*/
@@ -78,15 +84,17 @@ hr {
     max-width: 600px; /*trava a largura maxima que definimos para o projeto*/
     padding: 0 16px; /*primeiro cima/baixo, segunda esquerda /direita*/
     margin: 0 auto; /*não aplica cima/baixo, o auto distribui o maximo possivel para esquerda e direita*/
+
+
 }
-.about-title {
+.title-median {
     font-family: "Raleway", sans-serif;  /*pega a fonte importada, caso ele não encontre a utilizada a sans-serif*/
     font-size: 32px; /*tamanho da fonte*/
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 25px;
+    margin-bottom: 24px;
 }
-.about image{
+.about-image{
     float: left; /*Alinha a imagem esquerda e texto a direita*/
     margin: 0 20px 10px 0; /*0 topo, 20 direita, 10 baixo 0 esquerda*/
     /*diminuir o tamanho das imagens*/
@@ -96,6 +104,7 @@ hr {
 .about-description {
     color: var(--gray); /*utiliza variavel de cor criado no root*/
     text-align: justify; /*justifica o texto*/
+    margin-bottom: 30px;
 }
 
 /*footer*/
@@ -106,7 +115,7 @@ hr {
     
 }
 
-.main-footer-container {
+.footer-container {
     display:flex; /* Deixar tudo na mesma linha*/
     align-items: center; /* Alinha todos os elementos*/
     justify-content: space-between; /*Colar nome de um lado e lista de icones do outro*/
@@ -119,11 +128,7 @@ hr {
 
 }
 
-.list-container {
-    display: flex; /*deixar os elementos na mesma linha*/ 
-    align-items: center; /*alinha todos os elementos*/
-    justify-content: space-between; /*Colocar o nome de um lado e os icones do outro*/
-}
+
 
 .footer-item {
     width: 50px;
@@ -136,5 +141,66 @@ hr {
     margin-left: 16px; /*Aplica a mesma class seguindo em diante, ate chegar*/
 }
 
+/*Contato*/
+
+.contact-text {
+    text-align: center; /*centralizar o texto*/
+    margin-bottom: 30px; /*Separa o paragrafo*/
+    font-size: 28px; /*altera o tamanho da fonte*/
+    color: var(--gray);
+}
+
+.contact {
+    background-color: var(--skyblue);
+    padding: 30px; /*espaçamento*/
+    max-width: 600px; /*Tamanho definido para projeto*/
+    margin-right: auto;/*empurra para direita*/
+    margin-left: auto;/*empurra para esquerda*/
+    margin-bottom: 20px;/*espaçamento baixo*/
+}
+
+.contact-label {
+    display: block; /*coloca os elementos em cima do outro*/
+    margin-bottom: 20px;
+    color: var(--blue);
+}
+.contact-field {
+    display: block; /*coloca os elementos um em cima do outro*/
+    width: 100%; /*ocupa o espaçamento maximo disponivel*/
+    height: 30px; /*aumenta a altura do campo*/
+    font-size: 16px; /*Altera o tamanho da fonte*/
+    padding-left: 10px; /*Empurra o elemento dentro do campo para esquerda*/
+    border: none;
+}
+.contact-field:focus { /*troca a cor do fundo da area do formulario ao clicar*/
+    background-color: var(--silver); /*cor do fundo*/
+    outline: none; /*remove a linha interna do campo da fonte*/
+}
+
+textarea.contact-field {
+    height: 150px; /*aumenta a altura do campo*/
+    padding: 10px; /*dar espaçamento em todas as direções*/
+    font-family: "Roboto", Calibri;
+}
+
+.button-form {
+    background-color: var(--blue); /*Cor do fundo do butao*/
+    color: var(--white);
+    border: 2px solid var(--blue);
+    border-radius: 10px;
+    padding: 2px 6px;
+    font-weight: bold;
+}
+.button-form:hover {
+    background-color: var(--white); /*Cor do fundo do butao*/
+    color: var(--white);
+}
+
+.contact-maps {
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 20px;
+}
 
 
