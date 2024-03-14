@@ -203,4 +203,41 @@ textarea.contact-field {
     padding-bottom: 20px;
 }
 
+/* Index*/
+
+.title-header {
+    font-family: "Madimi One", cursive; /*Utiliar a fonte Importada, 
+    caso nao encontre pega a fonte secundaria*/
+    color: var(--blue); /*Troca a cor da fonte*/
+    font-size: 38px; /*Aumenta o tamanho da fonte*/ 
+    padding-bottom: 10px; /*Cria espaçamento em baixo*/
+ }
+ 
+ .title-large {
+    font-family: "Rock Salt", cursive; /*Utiliar a fonte Importada, 
+    caso nao encontre pega a fonte secundaria*/
+    font-size: 38px; /*Tamanho da Fonte*/
+    color: var(--blue); /*Cor da Fonte*/
+    text-align: center; /*Centraliza o texto*/
+ }
+ 
+ .description {
+    text-align: center; /**/
+    color: var(--gray);
+    padding-bottom: 10px;
+ }
+ 
+ .emphasis {
+    background-color: var(--skyblue);
+    color: var(--blue);
+    border-radius: 25px;
+ }
+ 
+ .product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+ }
+
 
