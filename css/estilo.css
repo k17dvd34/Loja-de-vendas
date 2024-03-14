@@ -1,7 +1,6 @@
 /*Importa fonte do google fonts*/
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&display=swap');
 
 /*Reset*/
 
@@ -12,7 +11,8 @@
 
 }
 
-body {
+
+body,button,input {
     font: 400 22px "Roboto", sans-serif;
 }
 
@@ -238,6 +238,56 @@ textarea.contact-field {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 40px;
+    padding-bottom: 30px;
  }
+
+ .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .product-title {
+    font-size: 20px;
+    margin-bottom: 6px;
+    
+ }
+
+ .product-image {
+    width: 320px; /*colocar 2 produtos, porque o espaço do projeto é 600px*/
+    height: 220px; /*travar a altura da imagem*/
+    margin-bottom: 20px; /*Aplica um espaço abaixo da imagem*/
+
+ }
+
+ .product-price-container {
+    width: 100%; /*ocupar 100% do espaço disponivel*/
+    display: flex; /*Alinha os elementos na mesma linha*/
+    justify-content: space-between;
+    align-items: center;
+ }
+
+.product-price {
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.button-hover {
+    background-color: var(--skyblue);
+    color: var(--blue);
+    border: 2px solid var(--skyblue);
+    border-radius: 10px;
+    padding: 4px 2px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button-hover:hover {
+    background-color: transparent;
+
+}
+
+
 
 
