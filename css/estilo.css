@@ -115,7 +115,7 @@ hr {
     
 }
 
-.footer-container {
+.main-footer-container {
     display:flex; /* Deixar tudo na mesma linha*/
     align-items: center; /* Alinha todos os elementos*/
     justify-content: space-between; /*Colar nome de um lado e lista de icones do outro*/
@@ -129,6 +129,11 @@ hr {
 }
 
 
+.list-container {
+    display:flex; /* Deixar tudo na mesma linha*/
+    align-items: center; /* Alinha todos os elementos*/
+    justify-content: space-between; /*Colar nome de um lado e lista de icones do outro*/
+}
 
 .footer-item {
     width: 50px;
@@ -375,6 +380,25 @@ textarea.contact-field {
 .purchase-button:hover {
     filter: brightness(0.8);
 }
+
+/*Responsividade*/
+@media(max-width: 725px) {
+    .main-footer-container {
+    flex-direction:column
+    }
+}
+/*mobile*/
+@media(max-width: 420px) {
+    .main-header {
+    align-items: center;  
+    }
+    .main-footer{
+        text-align: center;
+    }
+
+}
+
+
 
 
 
